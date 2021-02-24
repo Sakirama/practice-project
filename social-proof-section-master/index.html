@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin-top: 1.5rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-Spartan h-auto">
+
+    <!-- background image -->
+    <div class="flex">
+      <div class="absolute top-0 -left-20">
+        <img src="images/bg-pattern-top-desktop.svg" alt="bg-top" class="hidden lg:block">
+        <img src="images/bg-pattern-top-mobile.svg" alt="bg-pattern-top-mobile" class="lg:hidden">
+      </div>
+      <div class="absolute bottom-0 right-0">
+        <img src="images/bg-pattern-bottom-desktop.svg" alt="bg-bottom" class="hidden lg:block">
+        <img src="images/bg-pattern-bottom-mobile.svg" alt="bg-pattern-bottom-mobile" class="lg:hidden">
+      </div>
+    </div> 
+
+    <!-- heading & rating section-->
+    <section class="mt-16 mx-6 lg:flex lg:justify-between lg:w-4/5 lg:mx-auto lg:mb-8">
+
+      <!-- heading section -->
+      <div class="text-center pb-5 lg:text-left lg:w-2/5">
+        <h1 class="text-3xl font-bold text-magenta-dark px-8 pb-4 lg:px-0 lg:text-4.5xl lg:leading-none">
+          10,000+ of our users love our products.
+        </h1>
+
+        <p class="font-medium text-magenta-darkGray lg:text-sm">
+          We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
+      </div>
+
+      <!-- rating section -->
+      <div class="py-4 lg:py-0 text-center text-magenta-dark font-bold lg:w-1/2 lg:pl-1 lg:grid">
+        <div class="py-3 my-4 lg:my-2 bg-magenta-lightGray rounded-lg lg:flex items-center lg:w-5/6 justify-self-start">
+          <div class="pb-2 lg:pb-0 lg:px-4 text-sm">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+          </div>
+          <span class="text-sm">Rated 5 Stars in Reviews</span>
+        </div>
+        <div class="py-3 my-4 lg:my-2 bg-magenta-lightGray rounded-lg lg:flex items-center lg:w-5/6 justify-self-center">
+          <div class="pb-2 lg:pb-0 lg:px-4 text-sm">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+          </div>
+          <span class="text-sm">Rated 5 Stars in Report Guru</span>
+        </div>
+        <div class="py-3 my-4 lg:my-2 bg-magenta-lightGray rounded-lg lg:flex items-center lg:w-5/6 justify-self-end">
+          <div class="pb-2 lg:pb-0 lg:px-4 text-sm">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+            <img src="images/icon-star.svg" alt="Stars" class="inline-block px-1 lg:px-0.5">
+          </div>
+          <span class="text-sm">Rated 5 Stars in BestTech</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section -->
+    <div class="mx-6 mt-4 mb-10 lg:w-4/5 lg:mx-auto lg:grid lg:grid-cols-3 lg:gap-x-6 lg:h-72">
+      <div class="bg-magenta-dark text-white py-9 px-9 mb-5 rounded-xl lg:h-56">
+        <div class="flex item-center pt-2 pb-6 lg:pt-0">
+          <img src="images/image-colton.jpg" alt="Colton" class="rounded-full w-12">
+          <div class="self-center pl-7">
+            <h2 class="font-bold">Colton Smith</h2>
+            <span class="text-pink-soft font-normal lg:text-sm">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="text-sm leading-6 tracking-wide lg:text-xs">
+          "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"
+        </div>
+      </div>
+
+      <div class="bg-magenta-dark text-white py-9 px-9 mb-5 rounded-xl lg:h-56 lg:self-center">
+        <div class="flex item-center pt-2 pb-6 lg:pt-0">
+          <img src="images/image-irene.jpg" alt="Irene" class="rounded-full w-12">
+          <div class="self-center pl-7">
+            <h2 class="font-bold">Irene Roberts</h2> 
+            <span class="text-pink-soft font-normal lg:text-sm">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="text-sm leading-6 tracking-wide lg:text-xs">
+          "Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."
+        </div>
+      </div>
+
+      <div class="bg-magenta-dark text-white py-9 px-9 mb-5 rounded-xl lg:h-56 lg:self-end">
+        <div class="flex item-center pt-2 pb-6 lg:pt-0">
+          <img src="images/image-anne.jpg" alt="Anne" class="rounded-full w-12">
+          <div class="self-center pl-7">
+            <h2 class="font-bold">Anne Wallace</h2> 
+            <span class="text-pink-soft font-normal lg:text-sm">Verified Buyer</span>
+          </div>
+        </div>
+        <div class="text-sm leading-6 tracking-wide lg:text-xs">
+          "Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>. 
+      Coded by 
+      <a href="#">
+        Sakirama
+      </a>.
+    </div>
+  </body>
+</html>
