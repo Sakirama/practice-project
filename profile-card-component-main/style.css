@@ -1,0 +1,104 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    max-width: 100%;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-position: left -20rem top -33rem, right -18rem bottom -37.5rem;
+    background-repeat: no-repeat;
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.card {
+    width: 20rem;
+    height: 22rem;
+    text-align: center;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.top-card {
+    padding-bottom: 1.5rem;
+    border-bottom: 0.25px solid hsla(0, 0%, 59%, 0.3);
+}
+
+.background-card img {
+    border-radius: 16px 16px 0px 0px;
+    width: 100%;
+}
+
+
+.photo-profile {
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-top: -55px;
+}
+
+.person {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.person .name {
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 5px;
+}
+
+.person .age {
+    font-weight: 400;
+    color: hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+
+.address {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+
+.bottom-card {
+    display: flex;
+    justify-content: space-around;
+    height: 20%;
+    /* justify-items: end; */
+    padding: 0.75rem 0px;
+    margin-top: 0.5rem;
+}
+
+.bottom-card div {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-card div h3 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.bottom-card div span {
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: 768px)  {
+    body {
+        background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+        background-position: left -45rem top -40rem, right -45rem bottom -35rem;
+        background-repeat: no-repeat;
+    }
+}
